@@ -1,0 +1,93 @@
+/* GENERAL **************************************************/
+body{
+    font-family: 'Raleway';
+    box-sizing: border-box;
+    letter-spacing: 0.1em;
+}
+.container{
+    /* Everything but footer */
+    height: 100vh;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #c00c0a;
+}
+.bold{
+    font-weight: 700;
+}
+#highlight_menu{
+    background-color: #2273ce;
+}
+.remove{
+    display: none
+}
+
+/* HOME ***************************************************/
+/* HEADER *************************************************/
+header{
+    height:80%;
+    color: white;
+    padding-left: 20px;
+    position: relative;
+    background-image: url("Images/wind.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    margin: 0px;
+    padding-top: 40px;
+    font-size: 10em;
+}
+header img{
+    margin-top: 100px;
+    width: 200px;
+}
+/* MENU *****************************************************/
+.menu{
+    height: 25%;
+    display: flex;
+    position: relative;
+    background-color: white;
+}
+
+.menu_page1,.menu_page2,.menu_page3,.menu_page4,.menu_page5,.menu_news{
+    flex-grow: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 5px;
+    background-color: #FFB500;
+}
+
+.menu_page1 h2, .menu_page2 h2, .menu_page3 h2, .menu_page4 h2, .menu_page5 h2, .menu_news h2{
+    margin: 0px;
+    text-align: center;
+    /* Vertical alignement */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu_page1 img, .menu_page2 img, .menu_page3 img, .menu_page4 img, .menu_page5 img, .menu_news img{
+    width: 50px;
+    /* Vertical alignement */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu_page1 a, .menu_page2 a, .menu_page3 a, .menu_page4 a, .menu_page5 a{
+    display: block;
+    height: 100%;
+    color: white;
+}
+
+.menu_page1:hover, .menu_page2:hover, .menu_page3:hover, .menu_page4:hover, .menu_page5:hover, .menu_news:hover{
+    background-color: #FFE300;
+}
